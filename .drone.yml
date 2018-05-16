@@ -3,9 +3,3 @@ pipeline:
     image: docker-nextcloud-drone-test
     commands:
       - build Dockerfile.13.0 .
-script:  
-  - ./.drone/build.sh
-notify:  
-  email:
-    recipients:
-      - forspam@itsmail.xyz
