@@ -1,6 +1,13 @@
 pipeline:
+
+  docker:
+    image: plugins/docker
+    repo: metro2030/docker-nextcloud-drone-test
+    secrets: [ docker_username, docker_password ]
+    
+    
   build:
-    image: docker-nextcloud-drone-test
+    image: metro2030/docker-nextcloud-drone-test
     commands:
       - build Dockerfile.13.0 .
     secrets: [ docker_username, docker_password ]
