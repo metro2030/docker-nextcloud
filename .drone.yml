@@ -1,0 +1,7 @@
+image: http://my-docker-registry/my-docker-image:version  
+script:  
+  - ./.drone/build.sh
+notify:  
+  email:
+    recipients:
+      - forspam@itsmail.xyz
