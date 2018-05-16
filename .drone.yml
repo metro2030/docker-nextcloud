@@ -3,4 +3,3 @@ pipeline:
   docker:
     image: metro2030/docker-nextcloud-drone-test
     secrets: [ docker_username, docker_password ]
-    tags: latest
