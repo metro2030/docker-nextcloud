@@ -1,11 +1,10 @@
 #!/bin/bash
 set -e  
-cd /var/cache/drone/src/path/to/app
+cd /var/cache/drone/
 
 # [pass tests here]
 
 wrapdocker &  
 sleep 5
 
-docker build -t docker-registry/nextcloud-test-drone Dockerfile.13.0 .  
-docker push docker-registry/nextcloud-test-drone 
+docker build -t nextcloud/nextcloud-test-drone Dockerfile.13.0 .  
