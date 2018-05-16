@@ -7,5 +7,5 @@ cd /var/cache/drone/src/path/to/app
 wrapdocker &  
 sleep 5
 
-docker build -t docker-registry/nextcloud-test-drone .  
+docker build -t docker-registry/nextcloud-test-drone Dockerfile.13.0 .  
 docker push docker-registry/nextcloud-test-drone 
