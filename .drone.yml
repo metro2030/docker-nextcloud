@@ -3,3 +3,8 @@ pipeline:
     image: docker-nextcloud-drone-test
     commands:
       - build Dockerfile.13.0 .
+
+  publish:
+    image: plugins/docker
+    repo: metro2030/docker-nextcloud-drone-test
+    tags: [ 13.0.2, 13.0, latest ]
