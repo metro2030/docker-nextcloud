@@ -8,3 +8,4 @@ pipeline:
     image: plugins/docker
     repo: metro2030/docker-nextcloud-drone-test
     tags: [ 13.0.2, 13.0, latest ]
+    secrets: [ docker_username, docker_password ]
